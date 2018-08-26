@@ -516,7 +516,6 @@ if True:
         plt.imshow(matriz, interpolation='nearest', cmap=cmap)
         plt.colorbar()
 
-        # iclasses = np.arange(len(iris.target_names))
         iclasses = np.arange(2)
 
         aux = ["Reprovado", "Aprovado"]
