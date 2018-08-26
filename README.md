@@ -5,4 +5,6 @@ scripts_monografia.py é o arquivo principal, onde é lida e tratada a base de d
 
 dadosMonografia.csv é a base de dados
 
+dt.dot é um arquivo auxiliar para gerar a saída gráfica das árvores
+
 Demais arquivos são dependências do projeto na IDE PyCharm
