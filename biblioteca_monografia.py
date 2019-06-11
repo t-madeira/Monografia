@@ -25,1184 +25,1587 @@ def isNumeric(x):
 def ajustaIdade (idade, dadosTratadosMonografia, i):
     if idade == "cinquenta  anos":
         dadosTratadosMonografia.at[i, "idade"] = 50
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
     elif idade == "DEZENOVE":
         dadosTratadosMonografia.at[i, "idade"] = 19
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
     elif idade == "trinta dois anos":
         dadosTratadosMonografia.at[i, "idade"] = 32
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
     elif idade == "cinquenta anos":
         dadosTratadosMonografia.at[i, "idade"] = 50
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
     elif idade == "quarenta e nove anos":
         dadosTratadosMonografia.at[i, "idade"] = 49
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
     elif idade == "cinquenta e quatro":
         dadosTratadosMonografia.at[i, "idade"] = 54
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
     elif idade == "trinta e um anos":
         dadosTratadosMonografia.at[i, "idade"] = 31
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
     elif idade == "cinquenta e quatro":
         dadosTratadosMonografia.at[i, "idade"] = 54
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
     elif idade == "quarenta e dois anos":
         dadosTratadosMonografia.at[i, "idade"] = 42
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
     elif idade == "cinquenta anos":
         dadosTratadosMonografia.at[i, "idade"] = 50
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
     elif idade == "quarenta e nove-49":
         dadosTratadosMonografia.at[i, "idade"] = 49
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
     elif idade == "Cinquenta anos":
         dadosTratadosMonografia.at[i, "idade"] = 50
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
     elif idade == "quarenta e quatro anos":
         dadosTratadosMonografia.at[i, "idade"] = 44
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
     elif idade == "quarenta e 8 anos":
         dadosTratadosMonografia.at[i, "idade"] = 48
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
     elif idade == "cinquenta e um":
         dadosTratadosMonografia.at[i, "idade"] = 51
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
     elif idade == "quarenta e seis anos":
         dadosTratadosMonografia.at[i, "idade"] = 46
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
     elif idade == "quarenta e três anos":
         dadosTratadosMonografia.at[i, "idade"] = 43
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
     elif idade == "QUARENTA E DOIS  anos":
         dadosTratadosMonografia.at[i, "idade"] = 42
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
     elif idade == "quarenta e quatro":
         dadosTratadosMonografia.at[i, "idade"] = 44
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
     elif idade == "sessenta anos":
         dadosTratadosMonografia.at[i, "idade"] = 60
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
     elif idade == "23/09/1969":
         dadosTratadosMonografia.at[i, "idade"] = 44
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
     elif idade == "22- 11-1967":
         dadosTratadosMonografia.at[i, "idade"] = 46
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
     else:
         if idade == "1972":
             dadosTratadosMonografia.at[i, "idade"] = 41
+            dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         elif idade == "1961":
             dadosTratadosMonografia.at[i, "idade"] = 52
+            dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         elif idade == "1971":
             dadosTratadosMonografia.at[i, "idade"] = 42
+            dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         elif idade == "1954":
             dadosTratadosMonografia.at[i, "idade"] = 59
+            dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         elif idade == "1973":
             dadosTratadosMonografia.at[i, "idade"] = 40
+            dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         elif idade == "1969":
             dadosTratadosMonografia.at[i, "idade"] = 44
+            dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         elif idade == "1958":
             dadosTratadosMonografia.at[i, "idade"] = 55
+            dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         elif idade == "1961":
             dadosTratadosMonografia.at[i, "idade"] = 52
+            dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         elif idade == "1977":
             dadosTratadosMonografia.at[i, "idade"] = 36
+            dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         elif idade == "1963":
             dadosTratadosMonografia.at[i, "idade"] = 50
+            dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         else:
             dadosTratadosMonografia.at[i, "idade"] = idade[:2]
+            dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     return dadosTratadosMonografia
 
 def ajustaTempoServico(tempo, dadosTratadosMonografia, i):
     if tempo == "dois":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 2
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "28 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 28
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "11anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 11
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "12anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 12
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "06 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 6
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "7anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 7
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "21 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 21
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "21 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 21
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "3 ANOS":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 3
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "8 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 8
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "15 Anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 15
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "23 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 23
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "3anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 3
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "29 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 29
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "09 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 9
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "6 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 6
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "12 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 12
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "2 ANOS":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 2
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "20 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 20
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "20anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 20
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "3 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 3
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "07 ANOS":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 7
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "6 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 6
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "15 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 15
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "23 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 23
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "2 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 2
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "20 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 20
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "dois":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 2
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "-":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 0
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "oito anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 8
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "22 anos e 3 meses":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 22
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "-":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 0
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "17 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 17
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "1 ano e 6 meses":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 2
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "29 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 29
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "15 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 15
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "34 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 34
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "4 meses":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 1
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "4 ANOS":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 4
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "10anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 10
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "42 anos /      6 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 42
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "5 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 5
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "6 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 6
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "-":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 0
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "8 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 8
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "21 ANOS":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 21
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "27 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 27
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "quase 5 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 5
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "16 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 16
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "15 escola e 3 meses Ong":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 15
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "1 ano":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 1
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "18 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 18
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "mais de 31 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 32
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "8 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 8
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "7 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 7
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "15 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 15
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "8 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 8
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "8 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 8
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "-":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 0
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "18 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 18
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "quatorze":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 14
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "8 ANOS":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 8
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "14 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 14
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "6 anos incompleto":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 6
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "-":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 0
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "4 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 4
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "18 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 18
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "3 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 3
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "8 Anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 8
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "3 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 3
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "18 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 18
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "3 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 3
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "4 meses":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 1
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "-":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 0
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "3 anos e 5 meses":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 4
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "16 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 16
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "1 ano e 6 meses":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 2
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "10 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 10
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "5 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 5
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "16 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 16
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "23 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 23
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "18 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 18
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "11 ANOS":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 11
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "21 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 21
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "10 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 10
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "27 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 27
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "5 anos  e 1 ano na escola":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 5
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "5 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 5
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "16 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 16
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "14 ANOS":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 14
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "2 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 2
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "9 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 9
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "9 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 9
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "05, anos como gestora, 16 anos  de regência.":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 21
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "15 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 15
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "menos de 1 ano.":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 1
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "01- 02- 2010":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 3
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "20 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 20
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "8 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 8
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "16 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 16
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "5 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 5
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "24 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 24
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "10 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 10
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "3 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 3
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "17 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 17
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "15 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 15
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "13 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 13
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "doze anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 12
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "3 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 3
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "-":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 0
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "7 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 7
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "16 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 16
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "cinco anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 5
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "6 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 6
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "12 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 12
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "17 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 17
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "-":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 0
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "13 (O)   e 20 (P)":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 33
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "quinze anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 15
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "15 ANOS":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 15
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "20 (vinte)":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 20
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "20 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 20
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "23 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 23
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "mais ou menos 19 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 19
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "28 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 28
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "32 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 32
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "15   anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 15
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "-":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 0
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "26 ANOS":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 26
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "23anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 23
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "quatro":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 4
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "10 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 10
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "32 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 32
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "4 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 4
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "8 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 8
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "24 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 24
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "12 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 12
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "22anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 22
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "12 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 12
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "16 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 16
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "31 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 31
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "-":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 0
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "23 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 23
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "16 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 16
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "três anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 3
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "15 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 15
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "29 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 29
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "18 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 18
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "4 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 4
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "nan":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 0
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "22 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 22
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "20 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 20
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "dez anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 10
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "10 meses":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 1
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "12 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 12
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "15 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 15
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "quinze anos de serviço,":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 15
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "2 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 2
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "14 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 14
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "2 anos e 10 meses":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 3
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "10 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 10
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "dezesseis":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 16
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "28 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 28
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "4 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 4
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "15 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 15
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "19 ANOS":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 19
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "7 ANOS":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 7
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "12 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 12
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "2 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 2
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "21 ANOS":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 21
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "32 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 32
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "23 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 23
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "13 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 13
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "dezesete anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 17
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "24 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 24
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "2 anos na escola e 8 anos na prefeitura":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 10
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "8 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 8
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "20 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 20
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "20 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 20
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "13 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 13
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "24 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 24
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "-":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 0
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "meses":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 1
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "13 ANOS":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 13
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "16 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 16
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "16 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 16
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "dois anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 2
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "2 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 2
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "2ANOS":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 2
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "11 ANOS":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 11
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "vinte e sete anos -27":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 27
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "vinte anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 20
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "27 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 27
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "-":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 0
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "10 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 10
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "7 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 7
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "23 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 23
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "11 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 11
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "10 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 10
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "24 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 24
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "27 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 27
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "10 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 10
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "27 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 27
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "7 anos    e   3 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 7
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "23 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 23
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "-":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 0
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "5 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 5
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "vinte anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 20
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "22 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 22
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "17 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 17
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "vinte e três anos de serviço":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 23
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "4 anos como professora":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 4
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "35 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 35
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "27 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 27
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "17 ANOS":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 17
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "10 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 10
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "3 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 3
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "9 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 9
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "vinte dois":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 22
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "35 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 35
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "sete ANOS":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 7
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "24 ANOS":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 24
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "16 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 16
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "dois anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 2
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "25 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 25
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "29 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 29
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "26 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 26
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "22 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 22
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "dezesete anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 17
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "10 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 10
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "16 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 16
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "5 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 5
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "22 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 22
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "-":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 0
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "23 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 23
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "quatro-04":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 4
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "2 anos":
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         dadosTratadosMonografia.at[i, "tempodeservico"] = 2
 
     elif tempo == "11 anos":
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         dadosTratadosMonografia.at[i, "tempodeservico"] = 11
 
     elif tempo == "25 anos":
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         dadosTratadosMonografia.at[i, "tempodeservico"] = 25
 
     elif tempo == "15 anos":
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         dadosTratadosMonografia.at[i, "tempodeservico"] = 15
 
     elif tempo == "20 anos":
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         dadosTratadosMonografia.at[i, "tempodeservico"] = 20
 
     elif tempo == "quatro anos":
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         dadosTratadosMonografia.at[i, "tempodeservico"] = 4
 
     elif tempo == "15, 1":
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         dadosTratadosMonografia.at[i, "tempodeservico"] = 15
 
     elif tempo == "9 anos":
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         dadosTratadosMonografia.at[i, "tempodeservico"] = 9
 
     elif tempo == "10 anos":
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         dadosTratadosMonografia.at[i, "tempodeservico"] = 10
 
     elif tempo == "Aproximadamente 22":
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         dadosTratadosMonografia.at[i, "tempodeservico"] = 22
 
     elif tempo == "22 anos":
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         dadosTratadosMonografia.at[i, "tempodeservico"] = 22
 
     elif tempo == "13 anos":
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         dadosTratadosMonografia.at[i, "tempodeservico"] = 13
 
     elif tempo == "-":
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         dadosTratadosMonografia.at[i, "tempodeservico"] = 0
 
     elif tempo == "Quinze anos":
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         dadosTratadosMonografia.at[i, "tempodeservico"] = 15
 
     elif tempo == "30 anos":
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         dadosTratadosMonografia.at[i, "tempodeservico"] = 30
 
     elif tempo == "22 anos":
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         dadosTratadosMonografia.at[i, "tempodeservico"] = 22
 
     elif tempo == "2 anos":
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         dadosTratadosMonografia.at[i, "tempodeservico"] = 2
 
     elif tempo == "2 anos":
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         dadosTratadosMonografia.at[i, "tempodeservico"] = 2
 
     elif tempo == "meio ano":
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         dadosTratadosMonografia.at[i, "tempodeservico"] = 1
 
     elif tempo == "-":
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         dadosTratadosMonografia.at[i, "tempodeservico"] = 0
 
     elif tempo == "14 anos":
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         dadosTratadosMonografia.at[i, "tempodeservico"] = 14
 
     elif tempo == "11 anos":
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         dadosTratadosMonografia.at[i, "tempodeservico"] = 11
 
     elif tempo == "vinte anos":
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         dadosTratadosMonografia.at[i, "tempodeservico"] = 20
 
     elif tempo == "1 ano":
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         dadosTratadosMonografia.at[i, "tempodeservico"] = 1
 
     elif tempo == "8 anos":
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         dadosTratadosMonografia.at[i, "tempodeservico"] = 8
 
     elif tempo == "20  e 32":
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         dadosTratadosMonografia.at[i, "tempodeservico"] = 32
 
     elif tempo == "1 ano e 6 meses":
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         dadosTratadosMonografia.at[i, "tempodeservico"] = 2
 
     elif tempo == "3 anos e 6 meses":
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         dadosTratadosMonografia.at[i, "tempodeservico"] = 4
 
     elif tempo == "+ 30":
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         dadosTratadosMonografia.at[i, "tempodeservico"] = 31
 
     elif tempo == "1 ano":
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
         dadosTratadosMonografia.at[i, "tempodeservico"] = 1
 
     elif tempo == "9 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 9
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "3 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 3
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "5 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 5
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "8 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 8
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "28 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 28
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "um":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 1
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "32 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 32
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "14 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 14
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "15 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 15
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "05 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 5
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "aqui 7 anos, total 23 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 23
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "4 ANOS":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 4
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "3 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 3
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "8 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 8
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "10 meses":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 1
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "1 ano e 3 meses":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 1
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "3 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 3
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "15 anos de idade":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 15
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "14 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 14
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "3 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 3
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "Aproximadamente 20 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 20
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "-":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 0
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "2 (vinte sete) anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 27
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "trinta":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 30
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "12 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 12
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "10 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 10
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "17 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 17
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "aproximadamente doze anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 10
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "1 ano":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 1
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "ATB(15 anos) Professora (3 ANOS)":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 18
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "4 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 4
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "26 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 26
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "-":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 0
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "MAIS DE 40 ANOS":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 41
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "2 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 2
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "9125 anos ou 25 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 25
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "18 meses como professora e 10 anos como secretária Escolar":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 11
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "1ano":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 1
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "23 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 23
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "sete anos na mesma escola":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 7
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "15 anos e seis meses.":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 16
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "27anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 27
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "14 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 14
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "23 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 23
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "6 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 6
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "vinte e oito anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 28
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "2 anos e 10 meses":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 3
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "16 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 16
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "31 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 31
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "17 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 17
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "2 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 2
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "-":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 0
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "11 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 11
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "24 e 12 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 12
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "SETE ANOS":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 7
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "Na Escola Municipal Antônio Joaquim Vieira  , tenho 10 anos e na Escola do Estado tenho 16 anos de Magistério":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 26
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "18 meses":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 2
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "30 dias":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 1
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "21 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 21
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "3 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 3
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "15anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 15
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "19 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 19
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "15 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 15
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "3 mêses":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 1
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "25 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 25
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "1 ano e 1 mês":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 1
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "8 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 8
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "6meses":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 1
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "7 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 7
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "4 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 4
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "vinte sete":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 27
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "3 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 3
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "6 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 6
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "15 ANOS":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 15
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "mais de 10 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 11
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "18 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 18
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "7 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 7
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "1 ano":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 1
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "2 ANOS":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 2
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "19 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 19
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "3 ANOS":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 3
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "10 ANOS":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 10
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "23 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 23
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "6 (seis) anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 6
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "12 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 12
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "4 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 4
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "-":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 0
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "vinte e tres":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 23
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "8 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 8
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "02 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 2
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "17 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 17
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "2 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 2
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "10 ANOS":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 10
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "13 anos e 1 mês":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 13
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "3 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 3
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "Na função de Supervisora 7 anos e como professora já aposentada 29 anos e 6 meses":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 37
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "20 anos":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 20
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "9 anos e 6 meses":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 10
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "2011":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 2
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "1996":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 17
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "1998":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 15
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     elif tempo == "1991":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 22
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
     elif tempo == " ":
         dadosTratadosMonografia.at[i, "tempodeservico"] = 0
+        dadosTratadosMonografia.at[i, "inconsistencia no preenchimento"] = 1
 
     return dadosTratadosMonografia
 
 def tratarValorAusenteTempoServico (dadosTratadosMonografia, i):
+
     idade = int(dadosTratadosMonografia.loc[i]["idade"])
     escolaridade = dadosTratadosMonografia.loc[i]["escolaridade"]
     media = 0
@@ -1264,109 +1667,109 @@ def tratarValorAusenteEscolaridade(dadosTratadosMonografia):
 
 def tratarMotivopartBarreiraFacilitadores(dadosTratadosMonografia):
     # motivopart
-    dadosTratadosMonografia["Identificação pessoal com o tema"] = 0
-    dadosTratadosMonografia["Identificação profissional com o tema"] = 0
-    dadosTratadosMonografia["Para aquisição de conhecimento na área"] = 0
-    dadosTratadosMonografia["Pelo fato de o curso ser gratuito"] = 0
-    dadosTratadosMonografia["Pelo fato de o curso estar vinculado à Universidade"] = 0
-    dadosTratadosMonografia["Por ser um curso à distância"] = 0
-    dadosTratadosMonografia["Por ser uma oportunidade de formação continuada"] = 0
+    dadosTratadosMonografia["Identificação pessoal com o tema (motivopart)"] = 0
+    dadosTratadosMonografia["Identificação profissional com o tema (motivopart)"] = 0
+    dadosTratadosMonografia["Para aquisição de conhecimento na área (motivopart)"] = 0
+    dadosTratadosMonografia["Pelo fato de o curso ser gratuito (motivopart)"] = 0
+    dadosTratadosMonografia["Pelo fato de o curso estar vinculado à Universidade (motivopart)"] = 0
+    dadosTratadosMonografia["Por ser um curso à distância (motivopart)"] = 0
+    dadosTratadosMonografia["Por ser uma oportunidade de formação continuada (motivopart)"] = 0
 
     # barreiras
-    dadosTratadosMonografia["Ausência da família"] = 0
-    dadosTratadosMonografia["Pouca comunicação com os pais"] = 0
-    dadosTratadosMonografia["Uso de substâncias por familiares"] = 0
-    dadosTratadosMonografia["Presença de drogas ilícitas no ambiente escolar"] = 0
-    dadosTratadosMonografia["Proximidade da rede de distribuição de drogas"] = 0
-    dadosTratadosMonografia["Ausência de limites dos alunos"] = 0
-    dadosTratadosMonografia["Ausência de colaboração da equipe escolar"] = 0
-    dadosTratadosMonografia["Ausência de regras no ambiente escolar"] = 0
+    dadosTratadosMonografia["Ausência da família (barreiras)"] = 0
+    dadosTratadosMonografia["Pouca comunicação com os pais (barreiras)"] = 0
+    dadosTratadosMonografia["Uso de substâncias por familiares (barreiras)"] = 0
+    dadosTratadosMonografia["Presença de drogas ilícitas no ambiente escolar (barreiras)"] = 0
+    dadosTratadosMonografia["Proximidade da rede de distribuição de drogas (barreiras)"] = 0
+    dadosTratadosMonografia["Ausência de limites dos alunos (barreiras)"] = 0
+    dadosTratadosMonografia["Ausência de colaboração da equipe escolar (barreiras)"] = 0
+    dadosTratadosMonografia["Ausência de regras no ambiente escolar (barreiras)"] = 0
 
     # facilitadores
-    dadosTratadosMonografia["Possuir alunos interessados na temática"] = 0
-    dadosTratadosMonografia["Presença de uma equipe para trabalhar a temática"] = 0
-    dadosTratadosMonografia["Estímulo aos alunos"] = 0
-    dadosTratadosMonografia["Desenvolvimento de projetos na escola"] = 0
-    dadosTratadosMonografia["Apoio aos projetos em desenvolvimento"] = 0
-    dadosTratadosMonografia["Presença de regras no ambiente escolar"] = 0
-    dadosTratadosMonografia["Promoção de compromisso e confiança"] = 0
-    dadosTratadosMonografia["Valorização do ambiente escolar"] = 0
-    dadosTratadosMonografia["Participação da comunidade e dos pais no trabalho de prevenção"] = 0
+    dadosTratadosMonografia["Possuir alunos interessados na temática (facilitadores)"] = 0
+    dadosTratadosMonografia["Presença de uma equipe para trabalhar a temática (facilitadores)"] = 0
+    dadosTratadosMonografia["Estímulo aos alunos (facilitadores)"] = 0
+    dadosTratadosMonografia["Desenvolvimento de projetos na escola (facilitadores)"] = 0
+    dadosTratadosMonografia["Apoio aos projetos em desenvolvimento (facilitadores)"] = 0
+    dadosTratadosMonografia["Presença de regras no ambiente escolar (facilitadores)"] = 0
+    dadosTratadosMonografia["Promoção de compromisso e confiança (facilitadores)"] = 0
+    dadosTratadosMonografia["Valorização do ambiente escolar (facilitadores)"] = 0
+    dadosTratadosMonografia["Participação da comunidade e dos pais no trabalho de prevenção (facilitadores)"] = 0
 
     for i in dadosTratadosMonografia.index:
         if "Pelo fato de o curso ser gratuito".find(str(dadosTratadosMonografia.loc[i]["motivopart"])) >= 0:
-            dadosTratadosMonografia.at[i, "Identificação pessoal com o tema"] = 1
+            dadosTratadosMonografia.at[i, "Identificação pessoal com o tema (motivopart)"] = 1
 
         if "Identificação profissional com o tema".find(str(dadosTratadosMonografia.loc[i]["motivopart"])) >= 0:
-            dadosTratadosMonografia.at[i, "Identificação profissional com o tema"] = 1
+            dadosTratadosMonografia.at[i, "Identificação profissional com o tema (motivopart)"] = 1
 
         if "Para aquisição de conhecimento na área".find(str(dadosTratadosMonografia.loc[i]["motivopart"])) >= 0:
-            dadosTratadosMonografia.at[i, "Para aquisição de conhecimento na área"] = 1
+            dadosTratadosMonografia.at[i, "Para aquisição de conhecimento na área (motivopart)"] = 1
 
         if "Pelo fato de o curso ser gratuito".find(str(dadosTratadosMonografia.loc[i]["motivopart"])) >= 0:
-            dadosTratadosMonografia.at[i, "Pelo fato de o curso ser gratuito"] = 1
+            dadosTratadosMonografia.at[i, "Pelo fato de o curso ser gratuito (motivopart)"] = 1
 
         if "Pelo fato de o curso estar vinculado à Universidade".find(
                 str(dadosTratadosMonografia.loc[i]["motivopart"])) >= 0:
-            dadosTratadosMonografia.at[i, "Pelo fato de o curso estar vinculado à Universidade"] = 1
+            dadosTratadosMonografia.at[i, "Pelo fato de o curso estar vinculado à Universidade (motivopart)"] = 1
 
         if "Por ser um curso à distância".find(str(dadosTratadosMonografia.loc[i]["motivopart"])) >= 0:
-            dadosTratadosMonografia.at[i, "Por ser um curso à distância"] = 1
+            dadosTratadosMonografia.at[i, "Por ser um curso à distância (motivopart)"] = 1
 
         if "Por ser uma oportunidade de formação continuada".find(
                 str(dadosTratadosMonografia.loc[i]["motivopart"])) >= 0:
-            dadosTratadosMonografia.at[i, "Por ser uma oportunidade de formação continuada"] = 1
+            dadosTratadosMonografia.at[i, "Por ser uma oportunidade de formação continuada (motivopart)"] = 1
 
         if "Ausência da família".find(str(dadosTratadosMonografia.loc[i]["barreiras"])) >= 0:
-            dadosTratadosMonografia.at[i, "Ausência da família"] = 1
+            dadosTratadosMonografia.at[i, "Ausência da família (barreiras)"] = 1
 
         if "Pouca comunicação com os pais".find(str(dadosTratadosMonografia.loc[i]["barreiras"])) >= 0:
-            dadosTratadosMonografia.at[i, "Pouca comunicação com os pais"] = 1
+            dadosTratadosMonografia.at[i, "Pouca comunicação com os pais (barreiras)"] = 1
 
         if "Uso de substâncias por familiares".find(str(dadosTratadosMonografia.loc[i]["barreiras"])) >= 0:
-            dadosTratadosMonografia.at[i, "Uso de substâncias por familiares"] = 1
+            dadosTratadosMonografia.at[i, "Uso de substâncias por familiares (barreiras)"] = 1
 
         if "Presença de drogas ilícitas no ambiente escolar".find(str(dadosTratadosMonografia.loc[i]["barreiras"])) >= 0:
-            dadosTratadosMonografia.at[i, "Presença de drogas ilícitas no ambiente escolar"] = 1
+            dadosTratadosMonografia.at[i, "Presença de drogas ilícitas no ambiente escolar (barreiras)"] = 1
 
         if "Proximidade da rede de distribuição de drogas".find(str(dadosTratadosMonografia.loc[i]["barreiras"])) >= 0:
-            dadosTratadosMonografia.at[i, "Proximidade da rede de distribuição de drogas"] = 1
+            dadosTratadosMonografia.at[i, "Proximidade da rede de distribuição de drogas (barreiras)"] = 1
 
         if "Ausência de limites dos alunos".find(str(dadosTratadosMonografia.loc[i]["barreiras"])) >= 0:
-            dadosTratadosMonografia.at[i, "Ausência de limites dos alunos"] = 1
+            dadosTratadosMonografia.at[i, "Ausência de limites dos alunos (barreiras)"] = 1
 
         if "Ausência de colaboração da equipe escolar".find(str(dadosTratadosMonografia.loc[i]["barreiras"])) >= 0:
-            dadosTratadosMonografia.at[i, "Ausência de colaboração da equipe escolar"] = 1
+            dadosTratadosMonografia.at[i, "Ausência de colaboração da equipe escolar (barreiras)"] = 1
 
         if "Ausência de regras no ambiente escolar".find(str(dadosTratadosMonografia.loc[i]["barreiras"])) >= 0:
-            dadosTratadosMonografia.at[i, "Ausência de regras no ambiente escolar"] = 1
+            dadosTratadosMonografia.at[i, "Ausência de regras no ambiente escolar (barreiras)"] = 1
 
         if "Possuir alunos interessados na temática".find(str(dadosTratadosMonografia.loc[i]["facilitadores"])) >= 0:
-            dadosTratadosMonografia.at[i, "Possuir alunos interessados na temática"] = 1
+            dadosTratadosMonografia.at[i, "Possuir alunos interessados na temática (facilitadores)"] = 1
 
         if "Presença de uma equipe para trabalhar a temática".find(str(dadosTratadosMonografia.loc[i]["facilitadores"])) >= 0:
-            dadosTratadosMonografia.at[i, "Presença de uma equipe para trabalhar a temática"] = 1
+            dadosTratadosMonografia.at[i, "Presença de uma equipe para trabalhar a temática (facilitadores)"] = 1
 
         if "Estímulo aos alunos".find(str(dadosTratadosMonografia.loc[i]["facilitadores"])) >= 0:
-            dadosTratadosMonografia.at[i, "Estímulo aos alunos"] = 1
+            dadosTratadosMonografia.at[i, "Estímulo aos alunos (facilitadores)"] = 1
 
         if "Desenvolvimento de projetos na escola".find(str(dadosTratadosMonografia.loc[i]["facilitadores"])) >= 0:
-            dadosTratadosMonografia.at[i, "Desenvolvimento de projetos na escola"] = 1
+            dadosTratadosMonografia.at[i, "Desenvolvimento de projetos na escola (facilitadores)"] = 1
 
         if "Apoio aos projetos em desenvolvimento".find(str(dadosTratadosMonografia.loc[i]["facilitadores"])) >= 0:
-            dadosTratadosMonografia.at[i, "Apoio aos projetos em desenvolvimento"] = 1
+            dadosTratadosMonografia.at[i, "Apoio aos projetos em desenvolvimento (facilitadores)"] = 1
 
         if "Presença de regras no ambiente escolar".find(str(dadosTratadosMonografia.loc[i]["facilitadores"])) >= 0:
-            dadosTratadosMonografia.at[i, "Presença de regras no ambiente escolar"] = 1
+            dadosTratadosMonografia.at[i, "Presença de regras no ambiente escolar (facilitadores)"] = 1
 
         if "Promoção de compromisso e confiança".find(str(dadosTratadosMonografia.loc[i]["facilitadores"])) >= 0:
-            dadosTratadosMonografia.at[i, "Promoção de compromisso e confiança"] = 1
+            dadosTratadosMonografia.at[i, "Promoção de compromisso e confiança (facilitadores)"] = 1
 
         if "Valorização do ambiente escolar".find(str(dadosTratadosMonografia.loc[i]["facilitadores"])) >= 0:
-            dadosTratadosMonografia.at[i, "Valorização do ambiente escolar"] = 1
+            dadosTratadosMonografia.at[i, "Valorização do ambiente escolar (facilitadores)"] = 1
 
         if "Participação da comunidade e dos pais no trabalho de prevenção".find(str(dadosTratadosMonografia.loc[i]["facilitadores"])) >= 0:
-            dadosTratadosMonografia.at[i, "Participação da comunidade e dos pais no trabalho de prevenção"] = 1
+            dadosTratadosMonografia.at[i, "Participação da comunidade e dos pais no trabalho de prevenção (facilitadores)"] = 1
 
     return dadosTratadosMonografia
 
